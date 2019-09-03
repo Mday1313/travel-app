@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+     margin: 0;
+     padding: 0;
+     box-sizing: inherit;
+ }
+ html {
+     /* 62.5% font-size is equal to 10px, 100% equal 16px */
+     font-size: 62.5%;
+ }
+ 
+ body {
+     box-sizing: border-box;
+ }
