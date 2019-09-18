@@ -31,6 +31,14 @@
         
         }
     }
+    &--green {
+        background-color: $color-primary-dk-green;
+        color: $color-primary-white;
+        &::after {
+            background-color: $color-primary-white;
+        
+        }
+    }
      
     &::after {
         content: "";
