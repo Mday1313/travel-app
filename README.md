@@ -4,7 +4,9 @@
 ## CSS and Sass Travel Application 
 
 
-<!-- ## Description -->
+## Description 
+
+This is a BEM structured SASS applications that explores various animation, clip-path and transition techniques.  
 
 
 ### Visit Application
