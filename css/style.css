@@ -119,6 +119,10 @@ body {
   overflow: hidden;
   z-index: -1;
   opacity: .15; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -132,6 +136,7 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
+  backface-visibility: hidden;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
@@ -183,6 +188,7 @@ body {
   color: #EEEEEE;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
+  backface-visibility: hidden;
   margin: .5rem 1rem; }
 
 .btn-text:active {
@@ -229,7 +235,7 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ACC6AA, #81a87e), url(../img/MDP_1536.jpg); }
+      background-image: linear-gradient(to right bottom, #ACC6AA, #81a87e), url(../img/coverr-spider-boat-1561050987454_1.jpg); }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, #77628C, #5f4e70), url(../img/MDP_4176.jpg); }
     .card__picture--3 {
@@ -444,3 +450,14 @@ body {
 .section-stories {
   padding: 15rem 0;
   position: relative; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #ACC6AA, #81a87e); }
+
+.book {
+  background-image: linear-gradient(125deg, rgba(238, 238, 238, 0.9) 0%, rgba(238, 238, 238, 0.9) 50%, transparent 50%), url(../../img/mountain.jpg);
+  background-size: 100%;
+  height: 50rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }

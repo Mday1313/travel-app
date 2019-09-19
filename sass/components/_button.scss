@@ -11,7 +11,9 @@
         font-size: $default-font-size;
     }
     &:hover {
+
         transform: translateY(-3px);
+        backface-visibility: hidden;
         box-shadow: 0 1rem 2rem rgba($color-black,.2);
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
@@ -76,6 +78,7 @@
         color: $color-primary-white;
         box-shadow: 0 1rem 2rem rgba($color-black, .15);
         transform: translateY(-2px);
+        backface-visibility: hidden;
         margin: .5rem 1rem;
      }
 
