@@ -160,7 +160,7 @@ body {
 
 .btn--green {
   box-shadow: 0 1rem 2rem transparent;
-  background-color: #81a87e;
+  background-color: #7aaa77;
   color: #EEEEEE; }
   .btn--green::after {
     background-color: #EEEEEE; }
@@ -223,7 +223,7 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ACC6AA, #81a87e); }
+        background-image: linear-gradient(to right bottom, #ACC6AA, #7aaa77); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #77628C, #5f4e70); }
       .card__side--back-3 {
@@ -242,7 +242,7 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ACC6AA, #81a87e), url(../img/coverr-spider-boat-1561050987454_1.jpg); }
+      background-image: linear-gradient(to right bottom, #ACC6AA, #7aaa77), url(../img/coverr-spider-boat-1561050987454_1.jpg); }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, #77628C, #5f4e70), url(../img/MDP_4176.jpg); }
     .card__picture--3 {
@@ -262,7 +262,7 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(172, 198, 170, 0.85), rgba(129, 168, 126, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(172, 198, 170, 0.85), rgba(122, 170, 119, 0.85)); }
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(119, 98, 140, 0.85), rgba(95, 78, 112, 0.85)); }
     .card__heading-span--3 {
@@ -407,7 +407,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #81a87e;
+    background-color: #7aaa77;
     opacity: 0;
     transition: opacity .2s; }
 
@@ -547,6 +547,80 @@ body {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem)/ 4) + 2 * 6rem); }
 
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background-color: #ffffff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#ACC6AA, #7aaa77);
+  z-index: 1000;
+  transition: transform 1.4s cubic-bezier(0.86, 0, 0.07, 1); }
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent, transparent 50%, #ffffff 50%);
+  background-size: 220%;
+  transition: all .4s; }
+  .navigation__link:link span, .navigation__link:visited span {
+    margin-right: 1.5rem;
+    display: inline-block; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #ACC6AA;
+  transform: translateX(1rem); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
@@ -573,7 +647,7 @@ body {
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #ACC6AA, #81a87e); }
+  background-image: linear-gradient(to right bottom, #ACC6AA, #7aaa77); }
 
 .book {
   background-image: linear-gradient(125deg, rgba(238, 238, 238, 0.9) 0%, rgba(238, 238, 238, 0.9) 50%, transparent 50%), url(../img/mountain.jpg);
