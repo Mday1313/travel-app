@@ -41,7 +41,6 @@
     &__content {
         width: 70%;
         background-color: $color-primary-white;
-        overflow: hidden;
         @include center;
         box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
         border-radius: 3px;
@@ -50,6 +49,12 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
+
+        @include respond(tab-port) {
+            width: 100%;
+            display: inline-block;
+            transform: translate(0) scale(0);
+        }
     }
 
     &__left {
