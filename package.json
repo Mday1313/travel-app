@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Mday1313/travel-app",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.10.2"
